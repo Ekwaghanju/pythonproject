@@ -1,0 +1,53 @@
+<MyLabel@Label>:
+    markup: True
+    font_name: 'roboto'
+    font_size: 40
+
+
+<MyButton@Button>:
+    font_name: 'roboto'
+    font_size: 30
+    bold: True
+    border: (2,2,2,2)
+    
+
+<ClockLayout>:
+    time_prop: time
+
+
+BoxLayout:
+    orientation: 'vertical'
+    
+    MyLabel:
+        id: time
+        text: '[b]00[/b]:00:00'
+        
+
+    BoxLayout:
+        height: 90
+        orientation: 'horizontal'
+        padding: 20
+        spacing: 20
+        size_hint: (1,None)
+
+        MyButton:
+            id: start_stop
+            text: 'Start'
+            on_press: app.start_stop()
+
+        MyButton:
+            text: 'Reset'
+            id: reset
+            on_press: app.reset()
+
+    MyLabel:
+        id: stopwatch
+        text: '00:00.[size=30]00[/size]'
+
+    Label:
+        text: 'Designed by Theodore'
+        color: 1 , 1 , 1 , 1
+        font_name: 'Aller'
+        markup: True
+
+    
