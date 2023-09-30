@@ -7,7 +7,7 @@ title = My First App
 package.name = myfirstapp
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.myfirstapp
+package.domain = org.test
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.0.0,kivymd==1.1.1
+requirements = python3.7.8,hostpython 3.7.8,kivy,pillow
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -64,7 +64,7 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3
+osx.python_version = 3.7.8
 
 # Kivy version to use
 osx.kivy_version = 1.9.1
